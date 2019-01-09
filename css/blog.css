@@ -1,0 +1,19 @@
+
+#blog .contenedor{
+	display: flex; /*para que esten en linea todos*/
+	justify-content: center;
+	flex-wrap: wrap; /*los que no caben en la pantalla se pongan x debajo*/
+}
+#blog article{
+	margin: 15px;
+}
+
+#blog img{
+	width: 100%;
+	max-width: 280px;
+	height: 90%;
+}
+
+#blog h3, h4{
+	text-align: center;
+}

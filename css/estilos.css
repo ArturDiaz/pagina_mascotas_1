@@ -1,0 +1,63 @@
+/*Fuente de Fondo*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('menu.css');
+@import url('banner.css');
+@import url('blog.css');
+@import url('info.css');
+@import url('footer.css');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;/*para que se contenga dentro del elemento*/
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+header{
+	width: 100%;
+	height: 50px;
+	background: #333;
+	color: #fff;
+	
+	/*para que el header se quede pegado mientras se desplaza para abajo*/
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100; /*para que estea por delante de todos*/
+}
+
+/*para que todo este alineado*/
+.contenedor, #contenedor{
+	width: 98%;
+	margin: auto;
+}
+
+/*flota el titulo del header y el label del icono menu*/
+h1{
+	float: left;
+}
+
+/*limpiar los float del contenedor ya que todos flotan pero no dentro*/
+header .contenedor{
+	display: table;
+}
+
+/*todos los sections*/
+section{
+	width: 100%;
+	margin-bottom: 25px;
+}
+
+/* -------------------- */
+#bienvenidos{
+	text-align: center;
+}
+
+@media (min-width:1024px){
+	.contenedor, #contenedor{
+		width: 1000px;
+	}
+}
